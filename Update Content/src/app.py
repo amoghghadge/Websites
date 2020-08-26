@@ -18,4 +18,6 @@ print('Loading function')
 
 def lambda_handler(event, context):
     print(event)
-    return event.get('key1')
+    bucket = event.get('bucket')
+
+    return event.get('file')

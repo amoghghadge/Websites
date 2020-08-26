@@ -1,6 +1,8 @@
-aws lambda add-permission --function-name arn:aws:lambda:us-east-1:420279361566:function:updateContent-updateContent-4RACAC98G05Q --statement-id api-gateway-invoke --action lambda:InvokeFunction --source-arn arn:aws:execute-api:us-east-1:420279361566:ktj2974nv7/*/POST/doctor --principal apigateway.amazonaws.com
+# Create an S3 bucket that the application code will be uploaded to
+aws s3 mb s3://amoghghadge-code-sam
 
-aws lambda remove-permission --function-name arn:aws:lambda:us-east-1:420279361566:function:updateContent-updateContent-4RACAC98G05Q --statement-id api-gateway-invoke
+# aws cloudformation package OR sam package
+aws cloudformation package  --s3-bucket amoghghadge-code-sam --template-file template.yaml --output-template-file gen/template-generated.yaml
 
-
-ARN: arn:aws:execute-api:us-east-1:420279361566:ktj2974nv7/*/POST/doctor
+# aws cloudformation deploy OR sam deploy
+aws cloudformation deploy --template-file gen/template-generated.yaml --stack-name updateContent --capabilities CAPABILITY_IAM

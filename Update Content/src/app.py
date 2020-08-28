@@ -17,7 +17,9 @@ print('Loading function')
 
 
 def lambda_handler(event, context):
+    print("RESPONSE:")
     print(event)
-    bucket = event.get('bucket')
 
-    return event.get('file')
+    event.get()
+
+    return "test"

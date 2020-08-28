@@ -2,44 +2,61 @@
 
     <head>
 
+        <title>Update Content</title>
+
         <script>
 
-            function myFunction() {
+            const inpFile = document.getElementById("inpFile");
+            const btnUpload = document.getElementById("btnUpload");
 
-                var xhttp = new XMLHttpRequest();
+            btnUpload.addEventListener("click", function () {
+
+                const xhr = new XMLHttpRequest();
+                const formData = new FormData();
+
+                for (const file of inpFile.files) {
+
+                    formData.append("myFiles[]", file);
+
+                }
+
+                var object = {};
+
+                formData.forEach(function(value, key){
+
+                    object[key] = value;
+
+                });
+
+                var json = JSON.stringify(object);
+
+                xhr.open("POST", "https://ktj2974nv7.execute-api.us-east-1.amazonaws.com/prod/doctor");
+                xhr.send(json);
+
                 xhttp.onreadystatechange = function() {
 
                     if (this.readyState == 4 && this.status == 200) {
 
-                        document.getElementById("response").innerHTML = this.responseText;
+                        document.getElementById("response").innerHTML = "success";
 
                     }
 
                 };
-                xhttp.open("POST", "https://nhjevg15fi.execute-api.us-east-2.amazonaws.com/prod/sendMessageJava", true);
-                xhttp.send();
-            
-            }
-
+                
+            })
+                
         </script>
 
     </head>
-    
+
     <body>
 
-        <div align="left">
+        <h1>Update the files of this website</h1>
 
-            <h3><span>Update this webpage</span></h3>
-            <form method="POST">
+        <input type="file" id="inpFile" multiple="multiple"> 
+        <button id="btnUpload">Upload Files</button>
 
-                <input type="file" multiple="multiple" /> 
-
-            </form>
-            <button onclick="myFunction()">Upload</button>
-
-            <p id="response"></p>
-            
-        </div>
+        <p id="response"></p>
 
     </body>
 

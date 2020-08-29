@@ -1,14 +1,14 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: A starter AWS Lambda function.
+Description: Lambda function to update the files of a website
 Resources:
   updateContent:
     Type: AWS::Serverless::Function
     Properties:
       Handler: app.lambda_handler
       Runtime: python3.6
-      CodeUri: s3://amoghghadge-code-sam/73d949434dab7cc042a76e3ac18cd300
-      Description: A starter AWS Lambda function.
+      CodeUri: s3://amogh-code-sam/ce69b7c9de6c77e00798af8513bbe6cc
+      Description: Lambda function to update the files of a website
       MemorySize: 128
       Timeout: 3
       Policies:

@@ -1,0 +1,17 @@
+------WebKitFormBoundarycn0AffYNZ5Az4DE0
+Content-Disposition: form-data; name="website-files"; filename="UploadMe.txt"
+Content-Type: text/plain
+
+Hopefully this works
+Hitaansh is a GOAT
+------WebKitFormBoundarycn0AffYNZ5Az4DE0
+Content-Disposition: form-data; name="website-files"; filename="UploadMe2.txt"
+Content-Type: text/plain
+
+Another testing file
+Some text
+Some more goated text
+------WebKitFormBoundarycn0AffYNZ5Az4DE0--
+
+
+FILE NAMES: ['filename="UploadMe.txt"', 'filename="UploadMe2.txt"']

@@ -1,7 +1,7 @@
 ## Websites
 
 ### Introduction
-    Multiple websites, either as Examples or for Local Companies
+    Multiple serverless websites, either as Examples or for Local Companies, hosted through Amazon Web Services
 ___________________________________________________________________________________________________
 
 ### Hosting

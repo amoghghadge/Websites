@@ -34,15 +34,18 @@ def lambda_handler(event, context):
     pattern = re.compile(r'filename="\w+\.\w+"')
 
     file_names = pattern.findall(form_string)
+    
+
+
     for x in range(len(file_names)):
-        # print(type(file_names[x]), file_names[x])
         file_names[x] = file_names[x][10:len(file_names[x])-1]
 
 
 
     content_type = event["params"]['header']['Content-Type']
     c_type, c_data = parse_header(content_type)
-
+    print("CONTENT_TYPE: {}".format(content_type))
+    print("C_TYPE: {}".format(c_type))
 
     c_data['boundary'] = bytes(c_data['boundary'], "utf-8")
 
@@ -55,7 +58,8 @@ def lambda_handler(event, context):
         file_body = file_body.decode('utf-8')
         file_bodies.append(file_body)
     
-    for x in range(len(file_names)):
-        s3_upload = s3.put_object(Bucket="aghadge-functionoutput", Key=file_names[x], Body=file_bodies[x])
+    for x in range(len(file_names)):        
+        s3.put_object(Bucket="aghadge-functionoutput", Key=file_names[x], Body=file_bodies[x], ContentType='text/' + file_names[x].split(".")[1])
+        boto3.resource('s3').ObjectAcl('aghadge-functionoutput',file_names[x]).put(ACL='public-read')
 
     return "Uploaded files to S3!"

@@ -28,8 +28,14 @@ def lambda_handler(event, context):
     # type: bytes
     decoded_form = base64.b64decode(event.get("body-json"))
 
+    print(decoded_form)
+
     # type: string
-    form_string = decoded_form.decode('utf-8')
+
+    try:
+        form_string = decoded_form.decode('utf-8')
+    except:
+        form_string = decoded_form.decode('utf-8')
 
     pattern = re.compile(r'filename="\w+\.\w+"')
 
@@ -56,6 +62,6 @@ def lambda_handler(event, context):
         file_bodies.append(file_body)
     
     for x in range(len(file_names)):
-        s3_upload = s3.put_object(Bucket="aghadge-functionoutput", Key=file_names[x], Body=file_bodies[x])
+        s3_upload = s3.put_object(Bucket="aghadge-functionoutput", Key=file_names[x], Body=file_bodies[x], ExtraArgs={'ACL': 'public-read'})
 
     return "Uploaded files to S3!"

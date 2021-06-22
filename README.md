@@ -1,6 +1,6 @@
 ### Introduction
     These are multiple serverless websites, either as Examples or for Local Businesses, hosted 
-    through Amazon Web Services. Each folder in this Repository is the code for a Website
+    through Amazon Web Services. Each folder in this Repository is the code for a Website.
     
     Websites for Local Businesses:
 

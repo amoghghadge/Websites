@@ -2,15 +2,15 @@
     These are multiple serverless websites, either as Examples or for Local Businesses, hosted 
     through Amazon Web Services. Each folder in this Repository is the code for a Website
     
+    Websites for Local Businesses:
+
+    [To be done]
+
     Example Websites:
     
     amoghghadge.com
     restaurant.amoghghadge.com
     doctor.amoghghadge.com
-
-    Websites for Local Businesses:
-
-    [To be done]
 ___________________________________________________________________________________________________
 
 ### Hosting

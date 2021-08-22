@@ -14,6 +14,9 @@
 
 .u-section-1 .u-text-2 {
   width: 803px;
+  background-image: none;
+  font-size: 1.25rem;
+  text-decoration: underline !important;
   margin: 28px auto 0;
 }
 
@@ -25,6 +28,8 @@
 
 .u-section-1 .u-text-4 {
   width: 803px;
+  font-size: 1.25rem;
+  text-decoration: underline !important;
   margin: 12px auto 0;
 }
 
@@ -139,6 +144,11 @@
     margin-right: 695px;
     margin-left: 22px;
   }
+
+  .u-section-2 .u-image-3 {
+    margin-right: 22px;
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -180,10 +190,6 @@
   }
 
   .u-section-2 .u-image-1 {
-    margin-right: 117px;
-  }
-
-  .u-section-2 .u-image-3 {
     margin-right: 117px;
   }
 }

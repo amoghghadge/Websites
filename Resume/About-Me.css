@@ -53,7 +53,17 @@
   }
 
   .u-section-1 .u-layout-cell-2 {
-    min-height: 346px;
+    min-height: 360px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 23px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 26px;
   }
 }
 

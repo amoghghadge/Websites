@@ -1,0 +1,135 @@
+.u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 621px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 501px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: none;
+  margin: 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-image-1 {
+  width: 278px;
+  height: 278px;
+  object-position: 16.16% 50%;
+  background-image: url("images/916b02cc58a6aaf494d74d295fe4465b116b452f8614588fdf48b84412c2dfcb3cc4ccfe798ddb7496c77d47bd1d25383a23237556d36424c25bb7_1280.jpg");
+  background-position: 18.01% 50%;
+  margin: 45px auto 0 60px;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 501px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 0 30px;
+}
+
+.u-section-1 .u-text-3 {
+  line-height: 2;
+  font-size: 1rem;
+  margin: 30px 0 0;
+}
+
+.u-section-1 .u-text-4 {
+  font-weight: 400;
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-text-5 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.u-section-1 .u-text-6 {
+  font-weight: 400;
+  margin: 25px 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin: 45px auto 0;
+  padding: 10px 47px 10px 46px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 524px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: 54px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 413px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 260px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 276px;
+    height: 276px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 360px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

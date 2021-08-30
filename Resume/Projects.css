@@ -24,6 +24,7 @@
 }
 
 .u-section-1 .u-btn-2 {
+  background-image: none;
   padding: 0;
 }
 
@@ -32,6 +33,10 @@
 }
 
 .u-section-1 .u-btn-4 {
+  padding: 0;
+}
+
+.u-section-1 .u-btn-5 {
   padding: 0;
 }
 

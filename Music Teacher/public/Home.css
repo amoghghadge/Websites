@@ -25,10 +25,16 @@
 }
 
 .u-section-1 .u-text-1 {
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  font-family: Oswald, sans-serif;
+  font-size: 3rem;
   margin: 28px 1px 0;
 }
 
 .u-section-1 .u-text-2 {
+  font-family: "Open Sans", sans-serif;
   margin: 20px 0 0 1px;
 }
 
@@ -60,16 +66,10 @@
   }
 
   .u-section-1 .u-text-1 {
-    font-weight: normal;
-    text-transform: none;
-    letter-spacing: normal;
-    font-family: Oswald, sans-serif;
     margin-top: 0;
-    font-size: 3rem;
   }
 
   .u-section-1 .u-text-2 {
-    font-family: "Open Sans", sans-serif;
     width: auto;
     margin-top: 19px;
     margin-right: 1px;

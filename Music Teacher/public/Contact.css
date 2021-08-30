@@ -55,6 +55,7 @@
 
 .u-section-1 .u-text-4 {
   font-weight: 700;
+  text-transform: none;
   margin: 22px 0 0;
 }
 
@@ -88,6 +89,7 @@
 
 .u-section-1 .u-text-6 {
   font-weight: 700;
+  text-transform: none;
   margin: 19px 0 0;
 }
 
@@ -126,16 +128,8 @@
     min-height: 204px;
   }
 
-  .u-section-1 .u-text-4 {
-    text-transform: none;
-  }
-
   .u-section-1 .u-layout-cell-3 {
     min-height: 204px;
-  }
-
-  .u-section-1 .u-text-6 {
-    text-transform: none;
   }
 
   .u-section-1 .u-layout-cell-4 {

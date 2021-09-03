@@ -34144,10 +34144,10 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
  /*begin-variables custom-site-css*/.lex-web-ui-iframe {
-    max-width: 430px !important;
-    max-height: 600px !important;
-	min-width: 430px !important;
-    min-height: 600px !important;
+    max-width: 323px !important;
+    max-height: 450px !important;
+	min-width: 323px !important;
+    min-height: 450px !important;
 }/*end-variables custom-site-css*/
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }

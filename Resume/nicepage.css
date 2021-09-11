@@ -34105,7 +34105,7 @@ a.u-link.u-text-hover-grey-90:hover {
   background-image: none;
   text-transform: none;
   font-weight: normal;
-  margin: -29px 629px 25px 0;
+  margin: -29px 675px 25px 0;
 }
 
 .u-header .u-btn-1 {
@@ -34126,15 +34126,34 @@ a.u-link.u-text-hover-grey-90:hover {
     margin-bottom: 33px;
   }
 }
+@media (max-width: 991px) {
+  .u-header .u-menu-1 {
+    margin-top: 24px;
+  }
 
-@media (max-width: 767px) {
   .u-header .u-text-1 {
-    margin-right: 29px;
+    margin-top: -27px;
+    margin-right: 44px;
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 767px) {
+  .u-header .u-sheet-1 {
+    min-height: 84px;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: 25px;
+  }
+
+  .u-header .u-text-1 {
+    margin-right: 61px;
+    margin-bottom: 32px;
   }
 }
 @media (max-width: 575px) {
   .u-header .u-text-1 {
-    margin-right: 0;
+    margin-right: 51px;
   }
 }
 .u-footer {
@@ -34177,8 +34196,8 @@ a.u-link.u-text-hover-grey-90:hover {
  /*begin-variables custom-site-css*/.lex-web-ui-iframe {
     max-width: 323px !important;
     max-height: 450px !important;
-	min-width: 323px !important;
-    min-height: 450px !important;
+	min-width: 200px !important;
+    min-height: 278px !important;
 }/*end-variables custom-site-css*/
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }

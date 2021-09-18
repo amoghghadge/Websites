@@ -5,7 +5,7 @@
     Websites for Local Businesses:
 
     andersonmusicstudioandensemble.com
-    madhubhatiamd.com
+    drmadhubhatia.com
     opportunityedu.com (Hosted on Wordpress, code not included in this repo)
 
     Example Websites:
